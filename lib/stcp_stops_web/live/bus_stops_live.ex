@@ -9,6 +9,7 @@ defmodule StcpStopsWeb.BusStopsLive do
      |> assign(:loading, true)
      |> assign(:error, nil)
      |> assign(:stops, [])
+     |> assign(:show_form, false)
      |> load_stops()}
   end
 
@@ -17,13 +18,29 @@ defmodule StcpStopsWeb.BusStopsLive do
      socket
      |> assign(:stop_code, nil)
      |> assign(:loading, false)
-     |> assign(:error, "No stop code provided")
-     |> assign(:stops, [])}
+     |> assign(:error, nil)
+     |> assign(:stops, [])
+     |> assign(:show_form, true)}
   end
 
   @impl true
   def handle_info(:load_stops, socket) do
     {:noreply, load_stops(socket)}
+  end
+
+  @impl true
+  def handle_event("go_to_stop", %{"stop_code" => stop_code}, socket) do
+    stop_code = String.trim(stop_code)
+
+    if stop_code != "" do
+      {:noreply, push_navigate(socket, to: "/#{stop_code}")}
+    else
+      {:noreply, socket}
+    end
+  end
+
+  def handle_event("validate", _params, socket) do
+    {:noreply, socket}
   end
 
   defp load_stops(socket) do
