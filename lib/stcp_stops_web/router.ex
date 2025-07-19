@@ -17,6 +17,7 @@ defmodule StcpStopsWeb.Router do
   scope "/", StcpStopsWeb do
     pipe_through :browser
 
+    live "/", BusStopsLive, :home
     live "/:stop_code", BusStopsLive
   end
 
