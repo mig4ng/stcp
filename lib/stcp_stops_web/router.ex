@@ -17,7 +17,7 @@ defmodule StcpStopsWeb.Router do
   scope "/", StcpStopsWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/:stop_code", BusStopsLive
   end
 
   # Other scopes may use custom stacks.
