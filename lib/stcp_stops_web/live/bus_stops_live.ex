@@ -72,9 +72,7 @@ defmodule StcpStopsWeb.BusStopsLive do
 
   defp get_line_color(line) do
     case String.trim(line) do
-      line when line in ["201", "202", "203"] -> "bg-red-500"
-      line when line in ["500", "501", "502"] -> "bg-blue-500"
-      line when line in ["800", "801", "802", "803"] -> "bg-green-500"
+      line -> "bg-gray-500 linha_#{String.downcase(line)}"
       _ -> "bg-gray-500"
     end
   end

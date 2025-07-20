@@ -10,6 +10,16 @@
     <link phx-track-static rel="stylesheet" href={~p"/assets/css/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/js/app.js"}>
     </script>
+    <%!-- 
+    Use the lines CSS from stcp with a gray background fallback default.
+    The css is small, fast to load and appears to be cached.
+    I could host it here, but it would require me to update if new lines are added.
+    Also, if STCP is not working, we are not getting the buses times either way.
+    Elegant solution that just works.
+    --%>
+    <link rel="stylesheet" href="https://www.stcp.pt/fotos/cache/stcp/linhas.css">
+    <%!-- Also adding STCP Favicon --%>
+    <link rel="shortcut icon" href="https://www.stcp.pt/favicon.ico" type="image/x-icon">
   </head>
   <body class="bg-gray-50">
     {@inner_content}
