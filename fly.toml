@@ -3,14 +3,14 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'stcp-stops-patient-waterfall-3922'
+app = 'stcp'
 primary_region = 'fra'
 kill_signal = 'SIGTERM'
 
 [build]
 
 [env]
-  PHX_HOST = 'stcp-stops-patient-waterfall-3922.fly.dev'
+  PHX_HOST = 'stcp.carneiro.pt'
   PORT = '8080'
 
 [http_service]
