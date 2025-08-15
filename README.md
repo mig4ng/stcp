@@ -6,7 +6,7 @@ I made this with LLM's and some manual intervention to test <https://phoenix.new
 
 The LLM struggled a lot with figuring out how to scrape the data from STCP website, because it populates it after the initial page render. It spent me more than $20 in tokens figuring this out. Then I gave up and found on Github a library that did that already and used it to feed to LLM, and finally it succeeded. You can check the API library here: https://github.com/mig4ng/stcp_api
 
-There is a lot of improvement margin, but overall tools such as phoenix.new and devin.ai are getting really useful. For now for very small, limited scope develpments.
+There is a lot of improvement margin, but overall tools such as phoenix.new and devin.ai alongside with large language models are getting really useful. For now for very small, limited scope develpments.
 
 ## Screenshots
 
