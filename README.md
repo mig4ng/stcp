@@ -4,7 +4,7 @@ This is a Phoenix Framework and Elixir application designed to provide real-time
 
 ## Screenshots
 
-Here are some screenshots of the app, and also a screenshot how the official page loads on mobile. It works but is very hard to interact and read, that's why when I was in college I had this in my bucket list of things to do.
+Here are some screenshots of the app, and also a screenshot how the official page loads on mobile (for comparison). It works but is very hard to interact and read, that's why when I was in college I had this in my bucket list of things to do.
 
 | Main Page | Bus Stop Page | Official Page |
 |-----------|---------------|---------------|
