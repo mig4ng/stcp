@@ -1,4 +1,11 @@
 # STCP Real-time Bus Arrivals - Porto
+⚠️ **END OF LIFE AND NOT WORKING.**
+
+**STCP finally updated its website and now it works on mobile. During the process they removed the pages/widget this project was scraping.**
+
+**This project is no longer needed because the new website works great on mobile.**
+
+---
 
 This is a Phoenix Framework and Elixir application designed to provide real-time arrival times for buses in Porto, Portugal, specifically for the STCP (Sociedade de Transportes Colectivos do Porto) network.
 
